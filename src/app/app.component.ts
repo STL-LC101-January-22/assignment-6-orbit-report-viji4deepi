@@ -31,7 +31,8 @@ export class AppComponent {
 
 				 // make a copy of the sourceList to be shown to the user
 				 this.displayList = this.sourceList.slice(0);
-	  
+				 
+				 this.typeList = this.getSatelliteTypeList(this.sourceList);
 			}.bind(this));
 		}.bind(this));
 
